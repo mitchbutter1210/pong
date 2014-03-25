@@ -1,29 +1,19 @@
+import javax.swing.*;
 import java.applet.AudioClip;
-import java.awt.BasicStroke;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-import java.awt.Toolkit;
+import java.awt.*;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
-import java.io.IOException;
-import java.net.URI;
 import java.net.URL;
-
-import javax.swing.JApplet;
-import javax.swing.JComponent;
-import javax.swing.JFrame;
 //copyright Russell Baxt, 2013
 public class Pong extends JComponent implements MouseMotionListener
 {
-	int ballyspd = 2;
-	int xpos = 100;
+    int ballyspd = 1;
+    int xpos = 100;
 	int ypos = 100;
-	int ballxspd = 2;
-	JFrame window;
+    int ballxspd = 1;
+    JFrame window;
 	int ballsizex = 50;
 	int ballsizey = 50;
 	int width = Toolkit.getDefaultToolkit().getScreenSize().width;
